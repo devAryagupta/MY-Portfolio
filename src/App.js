@@ -6,6 +6,7 @@ import Navbar from './Components/navbar';
 import About from './Components/About/About';
 import Services from './Components/Services/Services';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const[theme,setTheme]=useState('light');
@@ -16,6 +17,7 @@ function App() {
       <About></About>
       <Services></Services>
       <Contact></Contact>
+      <Footer></Footer>
       
       
     </div>

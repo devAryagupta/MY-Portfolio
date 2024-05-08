@@ -5,7 +5,7 @@ import Services_Data from "../../Assets/services_data";
 import arrow_icon from '../../Assets/arrow_icon.svg'
 const Services =()=>{
     return(
-        <div className="services">
+        <div id="services"  className="services">
             <div className="services-title">
                 <h1>
                     My services 
