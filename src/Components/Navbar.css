@@ -1,13 +1,16 @@
 .navbar{
-    height: 80px;
-     
-    position: relative;
-    z-index: 1;
+    height: 70px;
+    width: 99%;
+    position: fixed;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content:space-between;
     margin: 0, 0;
-    cursor:pointer
+    cursor:pointer;
+    background-color: #1F0016;
+    user-select: none;
+    
 }
 
 .logo{
@@ -27,15 +30,15 @@
     align-items: center;
     list-style: none;
     gap: 30px;
-    font-size: 35px;
+    font-size: 32px;
     cursor:pointer
 }
 .nav-menu li{
     display: flex;
     flex-direction: column;
-    gap:5px;
+    gap:3px;
     cursor: pointer;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 .nav-connect{
     padding: 16px 18px;
@@ -54,33 +57,7 @@
     margin-left: 40px;
 
 }
-.search-box{
-    display: flex;
-    align-items: center;
-    background: #242424;
-    padding: 5px 2px;
-    border-radius: 50px;
-    margin-right: 5px;
 
-}
-.search-box input{
-    padding: 6px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    color: white;
-    font-size :18px;
-    max-width: 200px;
-
-
-}
-.search-box input ::placeholder{
-    color: white;
-}
-.search-box img{
-    width: 20px;
-    cursor: pointer;
-}
 .nav-menu li img{
     display: flex;
     margin: auto;
@@ -98,6 +75,10 @@
 @media(max-width:768px){
     .navbar{
         margin:20px 50px;
+        position: fixed;
+        z-index: 1000;
+        background-color: #1F0016;
+        width: 100%;
     }
     .nav-connect{
         display: none;

@@ -45,7 +45,7 @@ const Contact =()=> {
                     <div className="contact-details">
                         <div className="contact-detail"><img src={mail_icon} alt="" /><p>ag55140@gmail.com</p></div>
                         <div className="contact-detail"><img src={call_icon} alt="" /><p>+91 7877167264</p></div>
-                        <div className="contact-detail"><img src={location_icon}alt="" /><p>  mine location </p></div>
+                        <div className="contact-detail"><img src={location_icon}alt="" /><p>Jaipur,Rajasthan,India</p></div>
                     </div>
                 </div>
                 <form onSubmit={onSubmit} className="contact-right">
