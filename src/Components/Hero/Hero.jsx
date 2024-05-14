@@ -18,7 +18,7 @@ const Hero =() => {
             <h1><span>I'm ARYA GUPTA  </span><span>{text}<Cursor></Cursor></span></h1>
             <p>Btech In Artificial Inteliigence and Machine Learning</p>
             <div className="hero-action">
-                <div className="hero-connect"><AnchorLink className="anchor-link" offset={50} href="#contact">Connect With Me</AnchorLink></div>
+                <div className="hero-connect"><AnchorLink className="anchor-link" offset={75} href="#contact">Connect With Me</AnchorLink></div>
                 <div className="hero-resume">My resume</div>
             </div>
 
