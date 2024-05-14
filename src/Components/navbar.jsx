@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState,useEffect } from "react";
 import './Navbar.css'
 import logo from '../Assets/logo.svg'
 import underline from '../Assets/nav_underline.svg'
@@ -15,6 +15,32 @@ import menu_close from '../Assets/menu_close.svg'
 const Navbar =() =>{
     const[menu,setMenu]=useState("home");
     const menuRef =useRef();
+
+    const handleScroll = () => {
+        const sections = ['home', 'about', 'services', 'work', 'contact']; // IDs of your sections
+        const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        for (const section of sections) {
+            const element = document.getElementById(section);
+            if (element) {
+                const rect = element.getBoundingClientRect();
+                const mid = rect.top + (rect.height / 2);
+                if (scrollPosition > mid ) {
+                    setMenu(section);
+                }
+            }
+        }
+    };
+
+    useEffect(() => {
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Remove event listener on component unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const openMenu =() =>{
         menuRef.current.style.right="0";
