@@ -35,7 +35,7 @@ return(
             <li><AnchorLink className="anchor-link" offset={75} href="#contact"><p onClick={()=>setMenu("contact")}>Contact</p></AnchorLink>{menu==='contact'?<img src={underline} alt="" />:<></>}</li>
         </ul>
 
-        <div className="nav-connect"><AnchorLink className="anchor-link" offset={50} href="#contact">Connect with Me</AnchorLink></div>
+        <div className="nav-connect"><AnchorLink className="anchor-link" offset={75} href="#contact">Connect with Me</AnchorLink></div>
     </div>
 )
 }
