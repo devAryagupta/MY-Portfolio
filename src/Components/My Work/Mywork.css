@@ -1,0 +1,114 @@
+.mywork {
+  padding: 50px 0;
+  background-color: #000000; /* Black background */
+}
+
+.resume-section {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Center the title container */
+.mywork-title {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack elements vertically */
+  margin-bottom: 30px;
+}
+
+/* Style the title text */
+.mywork-title h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff; /* White text */
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: 0; /* Remove margin-right that was shifting it */
+}
+
+/* Gradient effect behind the title */
+.mywork-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 40px;
+  background: linear-gradient(90deg, #c400ff, #ff0077);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+/* Image positioning */
+.mywork-title img {
+  position: absolute;
+  top: 40px; /* Adjusted spacing */
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.justify-content-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing */
+}
+.download-cv {
+  max-width: 250px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.download-cv:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+.pdf-viewer {
+  margin: 30px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .pdf-viewer iframe {
+    height: 400px;
+  }
+
+  .download-cv {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .mywork-title h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .mywork-title::after {
+    width: 120px;
+    height: 30px;
+  }
+}
