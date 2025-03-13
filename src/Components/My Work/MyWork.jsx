@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
 import pdf from "../../Assets/RESUME_PDF.pdf";
@@ -6,10 +6,10 @@ import themePattern from "../../Assets/theme_pattern.svg"; // Assuming this is t
 import "./Mywork.css";
 
 const Mywork = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+
 
   useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
+    const handleResize = () => window.innerWidth;
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
